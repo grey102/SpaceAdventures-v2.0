@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DeployMeteorits : MonoBehaviour
@@ -17,13 +16,13 @@ public class DeployMeteorits : MonoBehaviour
     private void spawnEnemy()
     {
         GameObject a = Instantiate(Meteorit) as GameObject;
-        a.transform.position = new Vector3(415, Random.Range(120, 134), -5.5f);
+        a.transform.position += new Vector3(Random.Range(-7, -0.1f), 1, Random.Range(25f, 30));
 
-        GameObject b = Instantiate(MeteoritSmall) as GameObject;
-        b.transform.position = new Vector3(415, Random.Range(120, 134), -5.5f);
+        //GameObject b = Instantiate(MeteoritSmall) as GameObject;
+        //b.transform.position += new Vector3(Random.Range(-7, 8), 1, 15.7f);
 
         GameObject c = Instantiate(MeteoritBig) as GameObject;
-        c.transform.position = new Vector3(415, Random.Range(120, 134), -5.5f);
+        c.transform.position += new Vector3(Random.Range(0.1f, 8), 1, Random.Range(25f, 30));
     }
 
     IEnumerator MeteoritWave()
