@@ -95,6 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a7c517795dcdd345bd11e46a08b96ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 40
+  impactEffect: {fileID: 1919461589526787639, guid: 5ee83fe0ad619ac43b7363ca1b05d6d4,
+    type: 3}
 --- !u!136 &634227596531171688
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -106,9 +109,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.1
-  m_Height: 0.748
+  m_Height: 0.32
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.21, z: 0}
 --- !u!54 &485928964785203396
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -29,4 +29,9 @@ public class CharacterControl : MonoBehaviour
         }
 
     }
+
+    void OnTriggerEnter(Collider enemy)
+    {
+        Destroy(gameObject);
+    }
 }

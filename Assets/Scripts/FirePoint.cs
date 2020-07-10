@@ -10,7 +10,7 @@ public class FirePoint : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonUp("Fire1"))
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }

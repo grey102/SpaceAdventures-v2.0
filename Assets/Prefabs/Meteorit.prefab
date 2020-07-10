@@ -96,8 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  deathEffect: {fileID: 1919461589526787639, guid: 5ee83fe0ad619ac43b7363ca1b05d6d4,
-    type: 3}
+  deathEffect: {fileID: 0}
   mt: {fileID: 110239753211627816}
 --- !u!135 &5161573783387565678
 SphereCollider:
